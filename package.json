@@ -1,0 +1,29 @@
+{
+  "name": "ziggy-catfacts",
+  "version": "1.0.0",
+  "description": "catfacts",
+  "main": "index.js",
+  "dependencies": {
+    "concat-stream": "^1.4.6",
+    "hyperquest": "^1.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jarofghosts/ziggy-catfacts.git"
+  },
+  "keywords": [
+    "ziggy",
+    "cat",
+    "facts"
+  ],
+  "author": "jesse keane <me@jessekeane.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jarofghosts/ziggy-catfacts/issues"
+  },
+  "homepage": "https://github.com/jarofghosts/ziggy-catfacts"
+}
