@@ -14,14 +14,14 @@ function catFacts(ziggy) {
   getFact()
 
   function parseMessage(user, channel, text) {
-    if(/^\!catfacts/.test(text)) {
+    if(/^\!catfacts/.test(text) && users.indexOf(user.nick) === -1) {
       sayCurrent(user.nick)
       users.push(user.nick)
     }
   }
 
   function sayCurrent(nickname) {
-    if(!currentFact || users.indexOf(nickname) > -1) return
+    if(!currentFact) return
 
     ziggy.say(nickname, 'You are now subscribed to catfacts!')
     ziggy.say(nickname, currentFact)
