@@ -21,7 +21,7 @@ function catFacts(ziggy) {
   }
 
   function sayCurrent(nickname) {
-    if(!currentFact) return
+    if(!currentFact || users.indexOf(nickname) > -1) return
 
     ziggy.say(nickname, 'You are now subscribed to catfacts!')
     ziggy.say(nickname, currentFact)
